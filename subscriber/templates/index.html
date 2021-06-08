@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Received messages</title>
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"/>
+</head>
+<body>
+    <div class="container">
+        <div class="messages"><span class="msg-title"> Received messages: </span> {{value}}</div>
+        <button class="refresh-btn" onClick="window.location.reload();">refresh</button>
+    </div>
+</body>
+</html>
